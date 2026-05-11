@@ -19,7 +19,7 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ubuntu
           key: ${{ secrets.EC2_KEY }}
-          script: |
+          script: | 
             docker pull "${{ secrets.DOCKER_IMAGE }}"
             docker stop "${{ secrets.DOCKER_CONTAINER }}" || true
             docker rm "${{ secrets.DOCKER_CONTAINER }}" || true
