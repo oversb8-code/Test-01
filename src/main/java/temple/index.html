@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강원도 동해 논골담길</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: "Malgun Gothic", sans-serif;
+            background:#f4f8fb;
+            color:#333;
+            line-height:1.7;
+        }
+
+        header{
+            background:linear-gradient(to right, #0f4c81, #1b7cc5);
+            color:white;
+            text-align:center;
+            padding:40px 20px;
+        }
+
+        header h1{
+            font-size:3em;
+            margin-bottom:10px;
+        }
+
+        .container{
+            width:90%;
+            max-width:1300px;
+            margin:40px auto;
+        }
+
+        /* 이미지 + 설명 가로 배치 */
+        .tour-section{
+            display:flex;
+            gap:30px;
+            align-items:center;
+            background:white;
+            padding:30px;
+            border-radius:20px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .image-box{
+            flex:1;
+        }
+
+        .image-box img{
+            width:100%;
+            border-radius:15px;
+            box-shadow:0 3px 10px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+
+        .image-box img:hover{
+            transform:scale(1.02);
+        }
+
+        .text-box{
+            flex:1;
+        }
+
+        .text-box h2{
+            color:#0f4c81;
+            margin-bottom:20px;
+            border-left:8px solid #1b7cc5;
+            padding-left:15px;
+        }
+
+        .highlight{
+            color:#d14;
+            font-weight:bold;
+        }
+
+        .info-box{
+            margin-top:25px;
+            background:#eef7ff;
+            padding:20px;
+            border-left:6px solid #1b7cc5;
+            border-radius:10px;
+        }
+
+        .info-box ul{
+            margin-top:10px;
+            padding-left:20px;
+        }
+
+        footer{
+            margin-top:50px;
+            background:#0f4c81;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        /* 모바일 대응 */
+        @media(max-width:900px){
+
+            .tour-section{
+                flex-direction:column;
+            }
+
+            header h1{
+                font-size:2em;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>강원도 동해 논골담길</h1>
+        <p>바다와 벽화가 어우러진 감성 여행지</p>
+    </header>
+
+    <div class="container">
+
+        <div class="tour-section">
+
+            <!-- 이미지 영역 -->
+            <div class="image-box">
+
+                <a href="image11_02.png" target="_blank">
+                    <img src="image11_02.png" alt="논골담길 이미지">
+                </a>
+
+            </div>
+
+            <!-- 설명 영역 -->
+            <div class="text-box">
+
+                <h2>논골담길 소개</h2>
+
+                <p>
+                    <span class="highlight">논골담길</span>은
+                    강원도 동해시에 위치한 아름다운 관광 명소입니다.
+                </p>
+
+                <br>
+
+                <p>
+                    푸른 동해 바다와 감성적인 벽화,
+                    그리고 언덕길 풍경이 조화를 이루어
+                    많은 관광객들에게 사랑받고 있습니다.
+                </p>
+
+                <div class="info-box">
+
+                    <h3>추천 포인트</h3>
+
+                    <ul>
+                        <li>탁 트인 동해 바다 전망</li>
+                        <li>감성적인 벽화 거리</li>
+                        <li>아름다운 산책 코스</li>
+                        <li>사진 촬영 명소</li>
+                        <li>일출 감상 추천 장소</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 강원도 동해 논골담길
+    </footer>
+
+</body>
+</html>
