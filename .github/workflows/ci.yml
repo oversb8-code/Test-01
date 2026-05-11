@@ -9,7 +9,7 @@ jobs:
   build:
     defaults:
       run:
-        working-directory: ./target
+        working-directory: .
 
     runs-on: ubuntu-latest
 
